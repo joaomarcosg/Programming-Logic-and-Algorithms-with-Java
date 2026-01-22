@@ -1,8 +1,8 @@
 public class PizzaAccount {
-    private final double value;
+    private final int value;
     private final int numberOfClients;
 
-    public PizzaAccount(double value, int numberOfClients) {
+    public PizzaAccount(int value, int numberOfClients) {
         this.value = value;
         this.numberOfClients = numberOfClients;
     }
@@ -15,7 +15,7 @@ public class PizzaAccount {
         return numberOfClients;
     }
 
-    public static int CalcPizzaAccount(double value, int numberOfClients) {
-        return (int) (value / numberOfClients);
+    public int CalcPizzaAccount(int value, int numberOfClients) {
+        return  value / numberOfClients;
     }
 }
