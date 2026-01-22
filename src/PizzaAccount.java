@@ -15,7 +15,7 @@ public class PizzaAccount {
         return numberOfClients;
     }
 
-    public int CalcPizzaAccount(int value, int numberOfClients) {
+    public static int CalcPizzaAccount(int value, int numberOfClients) {
         return  value / numberOfClients;
     }
 }
