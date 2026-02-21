@@ -14,4 +14,8 @@ public class PaymentOptions {
         return price - discount;
     }
 
+    public static double CalcInstallmentPayment(double price) {
+        return price / 3;
+    }
+
 }
