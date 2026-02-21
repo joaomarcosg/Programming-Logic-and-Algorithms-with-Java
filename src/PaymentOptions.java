@@ -1,13 +1,17 @@
 public class PaymentOptions {
     private final double price;
 
+    public double getPrice() {
+        return price;
+    }
+
     public PaymentOptions(int price) {
         this.price = price;
     }
 
     public static double CalcCashPayment(double price) {
-
-        return 0.10 * price;
+        var discount = 0.10 * price;
+        return price - discount;
     }
 
 }
