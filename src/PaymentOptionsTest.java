@@ -14,4 +14,13 @@ public class PaymentOptionsTest {
 
     }
 
+    @Test
+    void calInstallmentPayment() {
+        double price = 60;
+
+        double result = PaymentOptions.CalcInstallmentPayment(price);
+
+        assertEquals(54, result);
+    }
+
 }
