@@ -16,6 +16,6 @@ public class GradeAverage {
     }
 
     public static int CalcGradeAverage(int firstGrade, int secondGrade) {
-        return firstGrade + secondGrade / 2;
+        return (firstGrade + secondGrade) / 2;
     }
 }
