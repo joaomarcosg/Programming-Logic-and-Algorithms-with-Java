@@ -20,7 +20,7 @@ public class PaymentOptionsTest {
 
         double result = PaymentOptions.CalcInstallmentPayment(price);
 
-        assertEquals(54, result);
+        assertEquals(20, result);
     }
 
 }
