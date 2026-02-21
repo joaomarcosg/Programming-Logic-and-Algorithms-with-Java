@@ -8,7 +8,7 @@ public class PaymentOptionsTest {
     void calcCashPayment() {
         double price = 60;
 
-        double result = PaymentOptions.CalcCashPayment(double price);
+        double result = PaymentOptions.CalcCashPayment(price);
 
         assertEquals(54, result);
 
