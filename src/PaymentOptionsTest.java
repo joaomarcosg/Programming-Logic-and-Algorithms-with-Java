@@ -1,14 +1,16 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class PaymentOptionsTest {
 
     @Test
     void calcCashPayment() {
-        int price = 60;
+        double price = 60;
 
-        int result = PaymentOptions.CalcCashPayment(int price);
+        double result = PaymentOptions.CalcCashPayment(double price);
 
-        assertEquals(20, result);
+        assertEquals(54, result);
 
     }
 
