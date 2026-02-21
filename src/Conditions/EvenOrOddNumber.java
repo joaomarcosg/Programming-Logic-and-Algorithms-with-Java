@@ -8,7 +8,7 @@ public class EvenOrOddNumber {
     }
 
     public static String checkNumber(int num) {
-        String evenOrOdd = num % 2 == 0 ? "Even" : "Odd";
+        String evenOrOdd = num % 2 == 0 ? "Odd" : "Even";
         return evenOrOdd;
     }
 }
