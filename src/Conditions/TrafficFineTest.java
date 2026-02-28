@@ -3,20 +3,24 @@ package Conditions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TrafficFineTest {
     @Test
     void trafficTicketSituation() {
         int permittedSpeed = 80;
 
-        int driverSpeed1 = 90;
-        int driverSpeed2 = 96;
+        int driverSpeed1 = 50;
+        int driverSpeed2 = 90;
         int driverSpeed3 = 100;
 
-        String result = TrafficFine.severityFine(permittedSpeed, driverSpeed);
+        String okResult = TrafficFine.severityFine(permittedSpeed, driverSpeed1);
+        String lightResult = TrafficFine.severityFine(permittedSpeed, driverSpeed2);
+        String seriousResult = TrafficFine.severityFine(permittedSpeed, driverSpeed3);
 
-        assertEquals("Ok", result );
-        assertEquals("Light", result );
-        assertEquals("Serious", result );
+        assertEquals("Okay", okResult );
+        assertNotEquals("Okay", lightResult);
+        assertEquals("Light", lightResult );
+        assertEquals("Serious", seriousResult );
     }
 }
