@@ -14,11 +14,11 @@ public class TrafficFine {
         String light = "Light";
         String serious = "Serious";
 
-        var upToTwentyPercentHigher = permittedSpeed + (permittedSpeed * 20/100);
+        var upToTwentyPercentHigher = (permittedSpeed * 20/100) + permittedSpeed;
 
         if (driverSpeed <= permittedSpeed) {
             return ok;
-        } else if (driverSpeed == upToTwentyPercentHigher) {
+        } else if (driverSpeed <= upToTwentyPercentHigher) {
             return light;
         } else {
             return serious;
