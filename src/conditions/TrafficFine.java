@@ -1,4 +1,4 @@
-package Conditions;
+package conditions;
 
 public class TrafficFine {
     private int permittedSpeed;
