@@ -1,3 +1,5 @@
+package main.java.exercises;
+
 public class PaymentOptions {
     private final double price;
 

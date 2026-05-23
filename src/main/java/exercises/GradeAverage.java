@@ -1,3 +1,5 @@
+package main.java.exercises;
+
 public class GradeAverage {
     private final int firstGrade;
     private final int secondGrade;

@@ -1,3 +1,7 @@
+package test.java.exercises;
+
+import main.java.exercises.NeighboringNumbers;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class NeighboringNumbersTest {

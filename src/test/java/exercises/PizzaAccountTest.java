@@ -1,3 +1,6 @@
+package test.java.exercises;
+
+import main.java.exercises.PizzaAccount;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

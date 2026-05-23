@@ -1,3 +1,5 @@
+package main.java.exercises;
+
 public class NeighboringNumbers {
     private final int prev;
     private final int next;

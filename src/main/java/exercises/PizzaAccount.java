@@ -1,3 +1,5 @@
+package main.java.exercises;
+
 public class PizzaAccount {
     private final int value;
     private final int numberOfClients;
