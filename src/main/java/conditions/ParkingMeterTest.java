@@ -1,4 +1,4 @@
-package conditions;
+package main.java.conditions;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package conditions;
+package main.java.conditions;
 
 public class EvenOrOddNumber {
     private final int num;
