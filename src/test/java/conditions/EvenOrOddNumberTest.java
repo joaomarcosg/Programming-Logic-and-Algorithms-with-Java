@@ -1,5 +1,6 @@
-package main.java.conditions;
+package test.java.conditions;
 
+import main.java.conditions.EvenOrOddNumber;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
