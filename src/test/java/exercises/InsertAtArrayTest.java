@@ -1,5 +1,6 @@
 package test.java.exercises;
 
+import main.java.exercises.InsertAtArray;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
