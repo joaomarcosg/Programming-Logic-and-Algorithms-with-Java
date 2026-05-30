@@ -17,12 +17,11 @@ public class InsertAtArrayTest {
         List<Integer> arr = new ArrayList<>(Arrays.asList(2, 3, 4));
         int value = 1;
 
-        InsertAtArray insertAtArray = new InsertAtArray();
         List<Integer> expected = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
 
-        List<Integer> get = insertAtArray.insertAtBeginning(arr, value);
+        InsertAtArray.insertAtBeginning(arr, value);
 
-        assertEquals(expected, get);
+        assertEquals(expected, arr);
 
     }
 }
