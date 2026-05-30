@@ -5,11 +5,8 @@ import java.util.List;
 
 public class InsertAtArray {
 
-    public InsertAtArray() {}
 
-    public List<Integer> insertAtBeginning(List<Integer> arr, int value) {
-
+    public static void insertAtBeginning(List<Integer> arr, int value) {
         arr.addFirst(value);
-        return arr;
     }
 }
