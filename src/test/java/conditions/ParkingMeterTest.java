@@ -1,5 +1,7 @@
 package test.java.conditions;
 
+import main.java.conditions.ParkingMeter;
+import main.java.conditions.ResultParkingMeter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,9 +17,9 @@ public class ParkingMeterTest {
 
     @Test
     void shouldReturnTimeWithoutChange_WhenAmountIsExact() {
-        ResultParkingMeter result = parkingMeter.lenghtOfStay(1.75);
+        ResultParkingMeter result = parkingMeter.lengthOfStay(1.75);
 
-        assertEquals("60 min", result.time);
-        assertEquals(0.0, result.change);
+        assertEquals("60 min", result.time());
+        assertEquals(0.0, result.change());
     }
 }
