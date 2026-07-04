@@ -16,7 +16,7 @@ public class ParkingMeter {
             time = "30 min";
             change = amount - 1.00;
         } else {
-            time = "Valor insuficente";
+            time = "Insufficient amount";
             change = 0.0;
         }
         return new  ResultParkingMeter(time, change);
