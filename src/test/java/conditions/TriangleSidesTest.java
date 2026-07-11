@@ -30,6 +30,6 @@ public class TriangleSidesTest {
         assertFalse(result.isTriangle());
         assertEquals("Its not a triangle", result.triangleType());
     }
-    
+
 
 }
