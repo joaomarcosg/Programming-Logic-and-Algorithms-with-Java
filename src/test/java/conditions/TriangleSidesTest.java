@@ -1,18 +1,14 @@
 package test.java.conditions;
 
+import main.java.conditions.ResultTriangleSides;
+import main.java.conditions.TriangleSides;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TriangleSidesTest {
     private TriangleSides triangleSides;
-
-    int sideA = 8;
-    int sideB = 10;
-    int sideC = 8;
-
 
     @BeforeEach
     void setUp() {
@@ -21,10 +17,19 @@ public class TriangleSidesTest {
 
     @Test
     void shouldReturnTrueIfIsATriangle_AndItsType() {
-        ResultTriangleSides result = new TriangleSides(sideA, sideB, sideC);
+        ResultTriangleSides result = triangleSides.triangle(8, 10, 8);
 
         assertTrue(result.isTriangle());
         assertEquals("Isosceles", result.triangleType());
     }
+
+    @Test
+    void shouldReturnFalseIfIsNotTriangle() {
+        ResultTriangleSides result = triangleSides.triangle(20, 10, 6);
+
+        assertFalse(result.isTriangle());
+        assertEquals("Its not a triangle", result.triangleType());
+    }
+    
 
 }
