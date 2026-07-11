@@ -3,10 +3,14 @@ package main.java.conditions;
 public class TriangleSides {
 
     public ResultTriangleSides triangle(int sideA, int sideB, int sideC) {
-
+        String type = "";
         boolean isTriangle = !(sideA > sideB + sideC || sideB > sideA + sideC || sideC > sideA + sideB);
 
-        String type = triangleType(sideA, sideB, sideC);
+        if (isTriangle) {
+            type = triangleType(sideA, sideB, sideC);
+        } else {
+            type = "Its not a triangle";
+        }
 
         return new ResultTriangleSides(isTriangle, type);
 
